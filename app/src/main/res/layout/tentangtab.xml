@@ -1,0 +1,16 @@
+<!-- Created by Suyono on 4/11/2015. -->
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <include layout="@layout/cover_anim"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+    </ScrollView>
+
+</LinearLayout>

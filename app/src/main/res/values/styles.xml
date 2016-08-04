@@ -1,0 +1,30 @@
+<resources>
+
+<style name="temanya">
+<item name="android:background">#ffb6b6b6</item>
+<item name="android:color">#ffb6b6b6</item>
+</style>
+    <style name="PreferencesTheme">
+        <item name="android:background">#ffffffff</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="Traffic">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="paddingzero">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+    <style name="downloadstyle">
+        <item name="android:background">@drawable/shapedownload</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">#ff840606</item>
+    </style>
+
+
+</resources>

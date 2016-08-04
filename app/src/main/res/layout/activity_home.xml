@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <!-- Created by Suyono on 4/11/2015. -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffb6b6b6">
+    <com.suyonoion.flymeosguide.ShaderView
+        android:id="@+id/preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffb6b6b6" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffb6b6b6">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:background="@color/action_bar_background"
+            android:gravity="bottom">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent">
+                <Spinner
+                    android:id="@+id/shader"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/shader_spinner_selector"/>
+            </LinearLayout>
+
+            <include layout="@layout/action_bar_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <com.suyonoion.flymeosguide.LockableScrollView
+            android:id="@+id/scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@color/editor_bg">
+            <com.suyonoion.flymeosguide.ShaderEditor
+                android:id="@+id/editor"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="8dp"
+                android:gravity="left|top"
+                android:typeface="monospace"
+                android:textSize="11sp"
+                android:ellipsize="end"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="textVisiblePassword|textMultiLine"
+                android:background="@color/editor_bg"
+                android:textColor="#ffde66ff" />
+        </com.suyonoion.flymeosguide.LockableScrollView>
+    </LinearLayout>
+</FrameLayout>
+
+
+
+</LinearLayout>

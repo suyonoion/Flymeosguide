@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.suyonoion.flymeosguide">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:glEsVersion="0x00020000"/>
+    <uses-feature android:name="android.software.live_wallpaper"/>
+    <supports-screens
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+
+
+
+        <service
+            android:name=".ShaderWallpaperService"
+            android:description="@string/description"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/shader_editor_wallpaper"/>
+        </service>
+        <activity
+            android:name=".utama"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".aktiviti_pertama"
+            android:label="@string/app_name"
+            android:theme="@style/paddingzero">
+        </activity>
+        <activity
+            android:name=".home"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:theme="@style/downloadstyle"
+            android:name=".ShaderPreferenceActivity"
+            android:label="@string/preferences"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".GuideTab"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".TentangTab"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".fitur"
+            android:label="@string/app_name">
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FlymeOS Guide and Guide in APK</title>
+    <link rel="stylesheet" href="cssnotepad/style.css">
+    <!--[if lt IE 9]><script src="/cssnotepad/html5.js"></script><![endif]-->
+	<link rel="shortcut icon" href="img/logo.ico" />
+	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" href="popup/magnific-popup.css"> 
+	<script src="popup/jquery.magnific-popup.js"></script> 
+
+	<link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="scripts/shCore.js"></script>
+    <script type="text/javascript" src="scripts/shBrushXml.js"></script>
+
+    <script type="text/javascript">SyntaxHighlighter.defaults['gutter'] = false; SyntaxHighlighter.all();</script>
+</head>
+<body>
+	
+	<div id="banner">
+		<header id="logo">
+			<img src="img/logo2x.png" alt="">
+			<h1>FlymeOS Guide</h1><span id="jobdesc">Guide in zip and Apk</span>
+
+		</header>
+		<div id="overlay"></div>
+	</div>
+
+    <section>
+        <span>What I do</span>
+        <div class="section">
+            <div class="content">
+                <div class="box">
+
+                    <h3>Step 1: Persiapan</h3>
+                    <p>Download Bahan dan Ikuti Guide Dengan Seksama dan Hati-hati.</p>
+
+                </div>
+                <div class="box">
+
+                    <h3>Step 2: Koding</h3>
+                    <p>Pilih Template dan Mulailah Berpikir :D.</p>
+                </div>
+                <div class="box">
+
+                    <h3>Step 3: FInishing</h3>
+                    <p>Install / Push Ke System<br />
+                        Tips: Jangan lupa set Permissionsnya ke rw-r-r</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="notepad">
+        <div class="notepad-heading">
+            <h1>Guide</h1>
+        </div><p>
+        <blockquote>
+        <pre>
+FlymeOS v2.0 Updated
+Sama Seperti Sebelumnya...
+
+1. Decompile systemui.apk
+2. Masukkin Bahan-bahan Ke Tempatnya
+	note : untuk smali traffic silahkan pilih sesuai apktool 1.5.2 (lama)
+	atau memakai apktool 2.0 (baru)
+
+	- Style Traffic
+	buka resvaluesstyles.xml
+	search &lt;/resources&gt;
+	tambahkan ini diatasnya
+
+	&lt;style name=&quot;TextAppearance.StatusBar.Traffic&quot; parent=&quot;@android:style/TextAppearance.StatusBar.Icon&quot;&gt;
+        &lt;item name=&quot;android:textSize&quot;&gt;12.0dip&lt;/item&gt;
+        &lt;item name=&quot;android:textStyle&quot;&gt;normal&lt;/item&gt;
+        &lt;item name=&quot;android:textColor&quot;&gt;@android:color/holo_blue_light&lt;/item&gt;
+    &lt;/style&gt;
+
+	buka reslayoutstatusbar.xml (sesuaikan dg HH/ROM)
+
+	- backup statusbar.xml nya yah,, buat compare mindah2in notif icon, date, signal dLL.
+
+	search @id/status_bar_contents
+	hapus script tersebut dari
+	&lt;LinearLayout android:orientation=&quot;horizontal&quot; android:id=&quot;@id/status_bar_contents&quot;...dst&gt;
+		sampai
+		.
+		.
+	&lt;/LinearLayout&gt;
+
+	diatas
+	&lt;LinearLayout android:orientation=&quot;horizontal&quot; android:id=&quot;@id/ticker&quot;..dst&gt;
+
+	GANTI DENGAN TEMPLATE SAYA (Silahkan dipilih)
+	didalam statusbar_contents tersebut anda pindah2kan scriptnya sesuai hati dan compare sesuai pilihan_barisnya.
+
+3. Silahkan Pilih templatenya apakah ingin
+    Garuda Style, 3 Jari Style, Anu Style,
+    2baris, 3baris, 4baris, 5baris, dan lainnya
+
+
+	4. Silahkan Pakai template tersebut dan pahami.
+	-letakkan signal, baterai, date dan lainnya secara hati-hati kedalam baris yg dituju
+	biasanya yg dipindah yg diapit oleh
+	&lt;LinearLayout android:id=&quot;@id/sesuatu&quot; ....dst..	&gt;
+		sesuatu disini
+	&lt;/LinearLayout&gt;
+	atau
+	&lt;com ....&gt;
+		sesuatu
+	&lt;/com ....&gt;
+	-perhatikan tag awal(mulai) dan akhirnya(penutup)
+		contoh :
+		search @id/signal_battery_cluster
+	disana ada
+	&lt;LinearLayout android:id=&quot;@id/signal_battery_cluster&quot; ....dst..	&gt;
+		&lt;include android:id=&quot;@id/signal_cluster&quot; android:layout_width=&quot;wrap_content&quot; android:layout_height=&quot;wrap_content&quot; layout=&quot;@layout/signal_cluster_view&quot; /&gt;
+	&lt;/LinearLayout&gt;
+
+	perhatikan jika ada LinearLaout dan @id nya terkait, usahakan jgn menceraikan sembarangan (klo dah jago terserah :D),sebisa mungkin pindahkan dalam se-tag awal dan akhir.
+	seperti ini :
+	&lt;LinearLayout android:id=&quot;@id/signal_battery_cluster&quot; ....dst..	&gt;
+		&lt;include android:id=&quot;@id/signal_cluster&quot; android:layout_width=&quot;wrap_content&quot; android:layout_height=&quot;wrap_content&quot; layout=&quot;@layout/signal_cluster_view&quot; /&gt;
+	&lt;/LinearLayout&gt;
+
+	jgn seperti ini dikeluarkan dari LinearLayout
+	&lt;include android:id=&quot;@id/signal_cluster&quot; android:layout_width=&quot;wrap_content&quot; android:layout_height=&quot;wrap_content&quot; layout=&quot;@layout/signal_cluster_view&quot; /&gt;
+	&lt;LinearLayout android:id=&quot;@id/signal_battery_cluster&quot; ....dst..	&gt;
+		misalnya dgnti sesuatu
+	&lt;/LinearLayout&gt;
+	atau akan force close nantinya :&#039;(
+	-begitu juga dg notifikasi
+	-saya rasa kalau clock, date,
+	(imageview dan textview tambahan) bisa dipindah sesuka hati.
+
+
+5. Anda Bisa Compare dengan statusbar.xml saya, yg ada di masing2 guide.
+6. setelah selesai
+7. Recompile
+8. Sign.
+9. Push
+10.Done
+
+
+Credit :
+  - StackOverflow
+  - markusfisch ( Open Source ShaderEditor HighLight-nya )
+  - MaaaDon Group (Semua Admin dan Member)
+    Mediatek Android Art and Dev Reborn
+  - Septian Abdi Nugraha (template Lainnya)
+  - Official Sony Xperia M Indonesia ( All Admins and Members)
+  - Dickey Kid&#039;deviel ( tempat bertanya hal-hal dasar statusbar linear :D)
+  - Suyono &quot;ion&quot;(me) Apk and guide.
+
+
+Thank&#039;s :
+  - Allah Subhanahu wa Ta&#039;ala
+  - Kedua Orang Tua
+  - Sahabat-sahabat
+  - You
+            </pre>
+        </blockquote>
+    </section>
+
+	
+	<script src="js/scripts.js"></script>
+</body>
+</html>

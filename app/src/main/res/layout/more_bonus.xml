@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top|center"
+    android:background="#ffffff">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent"
+        layout="@layout/slide_show_img" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:theme="@style/Base.Theme.AppCompat.Light"
+        android:layout_margin="2dp">
+        <!-- KONTEN MULAI -->
+
+
+        <LinearLayout android:orientation="horizontal" android:id="@+id/status_bar_contents" android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:background="#ff000000">
+
+            <LinearLayout android:orientation="vertical" android:id="@+id/konten_utama"
+                android:layout_width="fill_parent" android:layout_height="92.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@+id/konten1" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_weight="1.0">
+                    <ImageView  android:gravity="center_vertical" android:layout_width="45.0dip" android:layout_height="45.0dip"
+                        android:id="@+id/konten1_fotokiri"
+                        android:src="@drawable/ic_launcher" />
+                    <ImageView android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="1.0dip" android:layout_height="46.0dip" android:src="#ffffffff"
+                        android:id="@+id/konten1_garisfotokiri" />
+                    <LinearLayout android:orientation="vertical" android:id="@+id/konten1_tengah" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/konten1_baris1" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="23.0dip"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Disini (1)"
+                                android:id="@+id/textView26" />
+                        </LinearLayout>
+                        <ImageView android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#ffffffff"
+                            android:id="@+id/konten1_garistengah" />
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/konten1_baris2" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="23.0dip"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Disini (2)"
+                                android:id="@+id/textView27" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="1.0dip" android:layout_height="46.0dip" android:src="#ffffffff"
+                        android:id="@+id/konten1_garisfotokanan" />
+                    <ImageView  android:gravity="center_vertical" android:layout_width="45.0dip" android:layout_height="45.0dip"
+                        android:id="@+id/konten1_fotokanan"
+                        android:src="@drawable/ic_launcher" />
+                </LinearLayout>
+                <ImageView android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#ffffffff"
+                    android:id="@+id/garis_antara_duakonten" />
+                <LinearLayout android:orientation="horizontal" android:id="@+id/konten2" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="46.0dip">
+                    <LinearLayout android:gravity="left" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_weight="1.0"
+                        android:id="@+id/konten2_kirijam">
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/koten2_kirijam_baris1" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="23.0dip" android:layout_weight="1.0"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Disini (3)"
+                                android:id="@+id/textView28" />
+                        </LinearLayout>
+                        <ImageView android:paddingLeft="2.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#ffffffff"
+                            android:id="@+id/konten2_gariskiri" />
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/koten2_kirijam_baris2" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="23.0dip" android:layout_weight="1.0"
+                            android:gravity="center">
+
+                            <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center" android:paddingLeft="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Xperia M"
+                                android:id="@+id/konten2_merekhape" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <ImageView android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="2.0dip" android:layout_height="46.0dip" android:src="#ffffffff"
+                        android:id="@+id/konten2_garisjam_kiri" />
+                    <AnalogClock android:id="@+id/clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:singleLine="true" />
+                    <ImageView android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="2.0dip" android:layout_height="46.0dip" android:src="#ffffffff"
+                        android:id="@+id/konten2_garisjam_kanan" />
+                    <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@+id/konten2_kananjam" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_weight="1.0">
+
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/koten2_kananjam_baris1" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="23.0dip" android:layout_weight="1.0"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Disini (4)"
+                                android:id="@+id/textView29" />
+                        </LinearLayout>
+                        <ImageView android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#ffffffff"
+                            android:id="@+id/konten2_gariskanan" />
+                        <LinearLayout android:orientation="horizontal" android:id="@+id/koten2_kananjam_baris2" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="23.0dip" android:layout_weight="1.0"
+                            android:gravity="center">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="Disini (5)"
+                                android:id="@+id/textView30" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#ffffffff"
+                    android:id="@+id/garis_kontenutama" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:background="@drawable/shape2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="&lt;dimen"
+                android:id="@+id/textView19"
+                android:gravity="center"
+                android:textColor="#ff0000fe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=" name"
+                android:id="@+id/textView20"
+                android:textColor="#ffff301d" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="="
+                android:id="@+id/textView21"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="&quot;status_bar_height&quot;>"
+                android:id="@+id/textView22"
+                android:textColor="#ff0000fe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="92.0dip"
+                android:id="@+id/textView23"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="&lt;/dimen>"
+                android:id="@+id/textView24"
+                android:textColor="#ff0000fe" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

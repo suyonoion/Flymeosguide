@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Suyono on 4/11/2015. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top|center"
+    android:theme="@style/Base.Theme.AppCompat.Light"
+    android:background="@color/editor_bg">
+
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent"
+        layout="@layout/slide_show_img" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:id="@+id/linearLayout"
+        android:layout_margin="2dip">
+
+
+
+        <!-- KONTEN MULAI -->
+        <LinearLayout android:orientation="horizontal" android:id="@+id/status_bar_contents" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="6.0dip" android:paddingEnd="6.0dip"
+            android:background="#ff000000">
+            <!-- Konten Kiri (Mulai)-->
+            <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@+id/konten_kiri" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0">
+                <!--1--><LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@+id/konten_kiri_baris1" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_weight="1.0">
+
+                <ImageView android:contentDescription="LOGO" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sony" android:paddingStart="4.0dip" android:paddingLeft="4.0dip"/>
+
+            </LinearLayout>
+                <ImageView android:contentDescription="Garis Kiri" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#ffffffff" />
+                <!--2--><LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@+id/konten_kiri_baris2" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_weight="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="ABC"
+                    android:textColor="#fffaff43" />
+            </LinearLayout>
+            </LinearLayout>
+            <!-- Konten Kiri (selesai)-->
+
+            <AnalogClock android:contentDescription="Analog Tengah" android:gravity="center" android:id="@+id/clock" android:layout_width="wrap_content" android:layout_height="64.0dip" android:dial="@drawable/bg_jam" android:hand_hour="@drawable/jarum_pendek" android:hand_minute="@drawable/jarum_panjang" />
+
+            <!-- Konten Kanan (mulai)-->
+            <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@+id/konten_kanan" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0">
+                <!--1--><LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@+id/konten_kanan_baris1" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_weight="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="ABC"
+                    android:textColor="#ffff101a" />
+            </LinearLayout>
+                <ImageView android:contentDescription="Garis Kanan" android:paddingLeft="2.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#ffffffff" />
+                <!--2--><LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/konten_kanan_baris2" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_weight="1.0">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="ABC"
+                    android:textColor="#fffeff67" />
+            </LinearLayout>
+            </LinearLayout>
+            <!-- Konten Kanan (selesai)-->
+        </LinearLayout>
+
+        <!-- KONTEN SELESAI -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="&lt;dimen"
+                android:id="@+id/textView"
+                android:gravity="center"
+                android:textColor="#ff0000fe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=" name"
+                android:id="@+id/textView2"
+                android:textColor="#ffff301d" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="="
+                android:id="@+id/textView3"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="&quot;status_bar_height&quot;>"
+                android:id="@+id/textView4"
+                android:textColor="#ff0000fe" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="45.0dip"
+                android:id="@+id/textView5"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="&lt;/dimen>"
+                android:id="@+id/textView6"
+                android:textColor="#ff0000fe" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

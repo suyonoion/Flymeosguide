@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Suyono on 4/20/2015. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top|center"
+    android:background="@color/editor_bg">
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent"
+        layout="@layout/slide_show_img" />
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:layout_margin="2dip"
+    android:layout_marginTop="2dp"
+    android:id="@+id/dimen2">
+
+
+
+
+    <LinearLayout android:orientation="horizontal" android:id="@+id/status_bar_contents" android:layout_width="fill_parent" android:layout_height="70.0dip"
+        android:background="#00000000"
+        android:layout_marginTop="10dp">
+        <!-- Konten Kiri (Mulai)-->
+
+
+        <LinearLayout android:orientation="vertical" android:id="@+id/konten" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_weight="1.0">
+            <!--1-->
+
+            <RelativeLayout android:rotation = "5" android:layout_width="fill_parent" android:layout_height="20.0dip">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bg_slide"/>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/baris1" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_weight="1.0"
+                    android:layout_marginBottom="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="ABC"
+                        android:textColor="#ffffffff" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+            <!--2-->
+            <RelativeLayout android:rotation = "10" android:layout_width="fill_parent" android:layout_height="20.0dip">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bg_slide_kedip"/>
+                <LinearLayout
+                    android:orientation="horizontal" android:id="@+id/baris2" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:layout_marginBottom="2dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="ABC"
+                        android:textColor="#ffffffff" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <!--3-->
+            <RelativeLayout android:rotation = "15" android:layout_width="fill_parent" android:layout_height="20.0dip">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bg_slide"/>
+                <LinearLayout
+                    android:orientation="horizontal" android:id="@+id/baris3" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_weight="1.0"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="ABC"
+                        android:textColor="#ffffffff" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- KONTEN SELESAI -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_bar_contents"
+        android:layout_alignRight="@+id/status_bar_contents"
+        android:layout_alignEnd="@+id/status_bar_contents"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:padding="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="&lt;dimen"
+            android:id="@+id/textView19"
+            android:gravity="center"
+            android:textColor="#ff0000fe" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" name"
+            android:id="@+id/textView20"
+            android:textColor="#ffff301d" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="="
+            android:id="@+id/textView21"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="&quot;status_bar_height&quot;>"
+            android:id="@+id/textView22"
+            android:textColor="#ff0000fe" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="70.0dip"
+            android:id="@+id/textView23"
+            android:textColor="#ff000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="&lt;/dimen>"
+            android:id="@+id/textView24"
+            android:textColor="#ff0000fe" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/dimen2"
+        android:layout_alignLeft="@+id/dimen2"
+        android:layout_alignStart="@+id/dimen2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="@string/screenrecord"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffffff"
+            android:background="@drawable/shapeutama"
+            android:padding="3dp"
+            android:paddingLeft="3dp"
+            android:paddingTop="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="3dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="https://youtu.be/1UMEgepUzTo"
+            android:gravity="center|center_horizontal"
+            android:textColor="#29000000"
+            android:textColorLink="#ffeaffa5"
+            android:autoLink="all"
+            android:background="@drawable/shapeutama"
+            android:padding="3dp"
+            android:paddingTop="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingBottom="3dp" />
+    </LinearLayout>
+</LinearLayout>
+    </RelativeLayout>

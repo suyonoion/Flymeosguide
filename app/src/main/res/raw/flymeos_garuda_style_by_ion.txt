@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.PhoneStatusBarView android:orientation="vertical" android:id="@id/status_bar" android:background="#00000000" android:focusable="true" android:fitsSystemWindows="true" android:descendantFocusability="afterDescendants"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/opaque_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/status_bar_opaque_background" android:scaleType="fitXY" />
+        <ImageView android:id="@id/transparent_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/status_bar_transparent_background" android:scaleType="fitXY" />
+        <ImageView android:id="@id/light_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/status_bar_light_background" android:scaleType="fitXY" />
+        <ImageView android:id="@id/lights_out_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/status_bar_lights_out_background" android:scaleType="fitXY" />
+    </FrameLayout>
+    <ImageView android:id="@id/notification_lights_out" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="@dimen/status_bar_icon_size" android:layout_height="fill_parent" android:src="@drawable/ic_sysbar_lights_out_dot_small" android:scaleType="center" android:paddingStart="6.0dip" />
+	<!-- Untuk area isi dimohon Compare dengan Statusbar Asli pean , selebihnya biarkan saja -->
+	<!-- Ini Adalah Komentar, Agan Bisa Hapus , gak usah hapus juga boleh -->
+	<!-- Komentar Tidak berpengaruh sama sekali -->
+	<!-- Komentar Tidak akan tereksekusi -->
+	<!-- Edit Mulai dari sini -->
+	<LinearLayout android:orientation="horizontal" android:id="@id/status_bar_contents" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        
+		<LinearLayout android:gravity="left" android:orientation="vertical" android:id="@+id/konten_kiri" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_weight="1.0" android:rotation="13.0">            
+			
+			<!-- 1 -->
+			<RelativeLayout android:layout_width="fill_parent" android:layout_height="17.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bg_slide_baris1" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/konten_kiri_baris1" android:layout_width="fill_parent" android:layout_height="17.0dip" android:layout_weight="1.0">
+                    <!-- Isi baris_1 start -->
+					<LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/signal_battery_cluster" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="2.0dip">
+                        <include android:id="@id/signal_cluster" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="4.0dip" layout="@layout/signal_cluster_view" />
+                        <com.android.systemui.statusbar.policy.Traffic android:textAppearance="@style/TextAppearance.StatusBar.Traffic" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/traffic" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:paddingStart="4.0dip" />
+                    </LinearLayout>
+					<!-- Isi baris_1 end -->
+				</LinearLayout>
+            </RelativeLayout>
+            
+			<!-- 2 -->
+			<RelativeLayout android:layout_width="fill_parent" android:layout_height="17.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bg_slide" />
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@+id/konten_kiri_baris2" android:layout_width="fill_parent" android:layout_height="17.0dip" android:layout_weight="1.0">
+					<!-- Isi baris_2 start -->
+					<TextView android:textColor="#ffffffff" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Suyono" />
+					<!-- Isi baris_2 end -->
+				</LinearLayout>
+            </RelativeLayout>
+            
+			<!-- 3 -->
+			<RelativeLayout android:layout_width="fill_parent" android:layout_height="17.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bg_slide_baris1" />
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@+id/konten_kiri_baris3" android:layout_width="fill_parent" android:layout_height="17.0dip" android:layout_weight="1.0">
+                    <!-- Isi baris_3 start -->
+					<com.sonymobile.systemui.statusbar.operator.OperatorLabel android:textColor="#ffffffff" android:gravity="center" android:paddingRight="4.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" style="@style/SystemBarNotificationText" />
+                    <com.android.systemui.statusbar.StatusBarIconView android:textColor="#ffffffff" android:gravity="start|center" android:id="@id/moreIcon" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:visibility="gone" android:layout_width="@dimen/status_bar_icon_size" android:layout_height="fill_parent" android:src="@drawable/stat_notify_more" android:paddingStart="2.0dip" />
+                    <com.android.systemui.statusbar.phone.IconPartitioner android:textColor="#ffffffff" android:gravity="start|center" android:id="@id/notification_icon_area" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingStart="3.0dip">
+                        <com.android.systemui.statusbar.phone.IconMerger android:textColor="#ffffffff" android:gravity="center" android:orientation="horizontal" android:id="@id/notificationIcons" android:paddingLeft="2.0dip" android:paddingRight="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentStart="true" />
+                        <LinearLayout android:textColor="#ffffffff" android:gravity="center" android:orientation="horizontal" android:id="@id/system_icon_area" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/statusIcons" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                        </LinearLayout>
+                    </com.android.systemui.statusbar.phone.IconPartitioner>
+					<!-- Isi baris_3 end -->
+				</LinearLayout>
+            </RelativeLayout>
+        
+		</LinearLayout><!-- penutup konten_kiri -->
+        
+		<AnalogClock android:gravity="center" android:id="@+id/clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-17.0dip" android:layout_marginRight="-17.0dip" android:dial="@drawable/garuda" android:hand_hour="@drawable/gulf_hour" android:hand_minute="@drawable/gulf_minute" />
+        
+		<LinearLayout android:gravity="right" android:orientation="vertical" android:id="@+id/konten_kanan" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_weight="1.0" android:rotation="-13.0">
+            
+			<!-- 1 -->
+			<RelativeLayout android:layout_width="fill_parent" android:layout_height="17.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bg_slide_baris1" />
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/konten_kanan_baris1" android:layout_width="fill_parent" android:layout_height="17.0dip" android:layout_weight="1.0">
+                    <!-- Isi baris_1 start -->
+					<com.android.systemui.statusbar.policy.Clock android:textAppearance="@style/TextAppearance.StatusBar.Clock" android:textSize="12.0dip" android:gravity="start|center" android:id="@+id/clock" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:paddingStart="4.0dip" />
+                    <TextView android:layout_gravity="start|center" android:id="@id/battery_text" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status_bar_settings_settings_button" android:singleLine="true" android:paddingStart="4.0dip" style="@style/SystemBarNotificationText" />
+                    <ImageView android:layout_gravity="start|center" android:id="@id/battery" android:paddingRight="53.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="4.0dip" />
+					<!-- Isi baris_1 end -->
+				</LinearLayout>
+            </RelativeLayout>
+            
+			<!-- 2 -->
+			<RelativeLayout android:layout_width="fill_parent" android:layout_height="17.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bg_slide" />
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/konten_kanan_baris2" android:layout_width="fill_parent" android:layout_height="17.0dip" android:layout_weight="1.0">
+                    <!-- Isi baris_2 start -->
+					<com.android.systemui.statusbar.policy.DateView android:textColor="#ffffffff" android:layout_gravity="start|center" android:id="@+id/date" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:paddingStart="4.0dip" />
+					<!-- Isi baris_2 end -->
+				</LinearLayout>
+            </RelativeLayout>
+            
+			<ImageView android:paddingLeft="1.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#00000000" android:contentDescription="Garis Kanan" />
+            
+			<!-- 3 -->
+			<RelativeLayout android:layout_width="fill_parent" android:layout_height="17.0dip"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/bg_slide_baris1" />
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/konten_kanan_baris3" android:layout_width="wrap_content" android:layout_height="17.0dip">
+                    <!-- Isi baris_3 start -->
+					<ImageView android:gravity="start|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sony" android:contentDescription="LOGO" android:paddingStart="37.0dip" />
+					<!-- Isi baris_3 end -->
+				</LinearLayout>
+            </RelativeLayout>
+        
+		</LinearLayout><!-- Penutup konten_kanan -->
+    </LinearLayout><!-- Penutup status_bar_contens -->
+	
+	<!-- Edit Berakhir disini -->
+	
+	<!-- Credit : Suyono (ion) -->
+	<!-- Thanks : Allah -->
+	<!-- FlymeOS Garuda Style by-ion -->
+	<!-- Enjoy -->
+    <LinearLayout android:orientation="horizontal" android:id="@id/ticker" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="6.0dip">
+        <ImageSwitcher android:id="@id/tickerIcon" android:layout_width="@dimen/status_bar_icon_size" android:layout_height="@dimen/status_bar_icon_size" android:layout_marginEnd="4.0dip">
+            <com.android.systemui.statusbar.AnimatedImageView android:layout_width="@dimen/status_bar_icon_size" android:layout_height="@dimen/status_bar_icon_size" android:scaleType="center" />
+            <com.android.systemui.statusbar.AnimatedImageView android:layout_width="@dimen/status_bar_icon_size" android:layout_height="@dimen/status_bar_icon_size" android:scaleType="center" />
+        </ImageSwitcher>
+        <com.android.systemui.statusbar.phone.TickerView android:id="@id/tickerText" android:paddingTop="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingEnd="10.0dip">
+            <TextView android:textAppearance="@style/TextAppearance.StatusBar.PhoneTicker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:textAlignment="viewStart" />
+            <TextView android:textAppearance="@style/TextAppearance.StatusBar.PhoneTicker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:textAlignment="viewStart" />
+        </com.android.systemui.statusbar.phone.TickerView>
+    </LinearLayout>
+    <ImageView android:layout_gravity="top|left|center" android:id="@id/rounded_corner_ul" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rounded_corner_ul" />
+    <ImageView android:layout_gravity="top|right|center" android:id="@id/rounded_corner_ur" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rounded_corner_ur" />
+</com.android.systemui.statusbar.phone.PhoneStatusBarView>

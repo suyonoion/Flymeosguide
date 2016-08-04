@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Created by Suyono on 4/11/2015. -->
+
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/image0" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/picture1" android:scaleType="centerCrop" />
+    <ImageView android:id="@+id/image1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/picture2" android:scaleType="centerCrop" />
+</FrameLayout>

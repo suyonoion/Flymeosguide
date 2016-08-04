@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created by Suyono on 4/11/2015. -->
+<RelativeLayout
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewFlipper android:id="@+id/view_flipper_image_slide" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inAnimation="@anim/dxd_fade_in" android:outAnimation="@anim/dxd_fade_out" android:flipInterval="5000" android:repeatCount="infinite" android:autoStart="true" android:loopViews="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:background="@drawable/bg1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:background="@drawable/bg2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:background="@drawable/bg3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:background="@drawable/bg1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:background="@drawable/bg2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+            </LinearLayout>
+        </ViewFlipper>
+    </LinearLayout>
+
+</RelativeLayout>

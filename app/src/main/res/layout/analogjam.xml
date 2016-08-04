@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+        <ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android" android:repeatCount="infinite" android:id="@+id/view_flipper_jam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inAnimation="@anim/dxd_fade_in" android:outAnimation="@anim/dxd_fade_out" android:flipInterval="5000" android:autoStart="true" android:loopViews="true"
+    android:background="#00000000">
+            <LinearLayout android:background="#00000000" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <AnalogClock android:contentDescription="Analog" android:background="#00000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dial="@drawable/dial1" android:hand_hour="@drawable/hour1" android:hand_minute="@drawable/minute1" android:scaleType="fitXY" />
+            </LinearLayout>
+            <LinearLayout android:background="#00000000" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <AnalogClock android:contentDescription="Analog" android:background="#00000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dial="@drawable/dial2" android:hand_hour="@drawable/hour2" android:hand_minute="@drawable/minute2" android:scaleType="fitXY" />
+            </LinearLayout>
+            <LinearLayout android:background="#00000000" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <AnalogClock android:contentDescription="Analog" android:background="#00000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dial="@drawable/dial3" android:hand_hour="@drawable/hour3" android:hand_minute="@drawable/minute1" android:scaleType="fitXY" />
+            </LinearLayout>
+            <LinearLayout android:background="#00000000" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <AnalogClock android:contentDescription="Analog" android:background="#00000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dial="@drawable/dial4" android:hand_hour="@drawable/hour4" android:hand_minute="@drawable/minute1" android:scaleType="fitXY" />
+            </LinearLayout>
+            <LinearLayout android:background="#00000000" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <AnalogClock android:contentDescription="Analog" android:background="#00000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dial="@drawable/dial5" android:hand_hour="@drawable/hour5" android:hand_minute="@drawable/minute1" android:scaleType="fitXY" />
+            </LinearLayout>
+            <LinearLayout android:background="#00000000" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <AnalogClock android:contentDescription="Analog" android:background="#00000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dial="@drawable/dial6" android:hand_hour="@drawable/hour6" android:hand_minute="@drawable/minute1" android:scaleType="fitXY" />
+            </LinearLayout>
+            <LinearLayout android:background="#00000000" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <AnalogClock android:contentDescription="Analog" android:background="#00000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dial="@drawable/dial7" android:hand_hour="@drawable/hour7" android:hand_minute="@drawable/minute1" android:scaleType="fitXY" />
+            </LinearLayout>
+            <LinearLayout android:background="#00000000" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <AnalogClock android:contentDescription="Analog" android:background="#00000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dial="@drawable/dial1" android:hand_hour="@drawable/hour1" android:hand_minute="@drawable/minute1" android:scaleType="fitXY" />
+            </LinearLayout>
+            <LinearLayout android:background="#00000000" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <AnalogClock android:contentDescription="Analog" android:background="#00000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dial="@drawable/dial2" android:hand_hour="@drawable/hour2" android:hand_minute="@drawable/minute2" android:scaleType="fitXY" />
+            </LinearLayout>
+        </ViewFlipper>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FlymeOS Guide v2.0</string>
+    <string name="description">Tutorial Sederhana FlymeOS dengan Template</string>
+    <string name="add_shader">Text Baru</string>
+    <string name="delete_shader">Hapus</string>
+    <string name="share_shader">Bagikan/Open With/Clipboard</string>
+    <string name="are_you_sure">Apakah Anda Yakin Mau Menghapus ini?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Batal</string>
+    <string name="preferences">Setting</string>
+    <string name="wallpaper">Wallpaper</string>
+    <string name="sensors">Sensors</string>
+    <string name="sensor_delay">Sensor Delay</string>
+    <string name="sensor_delay_summary">Rate of sensor events</string>
+    <string name="shader">Flyme OS Guide</string>
+    <string name="shader_summary">Pilih Kode Guide</string>
+    <string name="editor">Editor</string>
+    <string name="compile_on_change">Compile On Change</string>
+    <string name="compile_on_change_summary">Compile on change summary</string>
+    <string name="show_fps_gauge">Tampilkan FPS Gauge</string>
+    <string name="show_fps_gauge_summary">Tampilkan FPS Gauge Summary</string>
+    <string name="update_delay">Update delay</string>
+    <string name="update_delay_summary">Update Delay Summary</string>
+    <string name="text_size">Ukuran Text</string>
+    <string name="text_size_summary">Ukuran Text Editor</string>
+
+    <string name="morebar">5 Baris</string>
+    <string name="duabar">2 Bar</string>
+    <string name="tigabar">3 Bar</string>
+    <string name="empatbar">4 Bar</string>
+    <string name="tentang">Tentang Saya</string>
+    <string name="preview">Preview</string>
+    <string name="nama">Suyono</string>
+    <drawable name="Blue">#b0e0e6</drawable>
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="green">#347C2C</drawable>
+    <drawable name="pink">#FF00FF</drawable>
+    <drawable name="violet">#a020f0</drawable>
+    <drawable name="grey">#cccccc</drawable>
+    <drawable name="red">#C11B17</drawable>
+    <drawable name="yellow">#FFFF8C</drawable>
+    <drawable name="PowderBlue">#b0e0e6</drawable>
+    <drawable name="brown">#2F1700</drawable>
+    <drawable name="darkgrey">#606060</drawable>
+    <string name="note1">Share Mohon Cantumkan Credit</string>
+    <string name="note2">Bongkar apk dan memakai dalamennya Mohon izin terlebih dahulu.</string>
+    <string name="makasih">Terimakasih</string>
+    <string name="screenrecord">ScreenRecord - Tested</string>
+</resources>

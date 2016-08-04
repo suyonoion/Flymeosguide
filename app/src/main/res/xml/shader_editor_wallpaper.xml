@@ -1,0 +1,4 @@
+<wallpaper xmlns:android="http://schemas.android.com/apk/res/android"
+	android:description="@string/description"
+	android:thumbnail="@drawable/ic_launcher"
+	android:settingsActivity="com.suyonoion.flymeosguide.ShaderPreferenceActivity"/>

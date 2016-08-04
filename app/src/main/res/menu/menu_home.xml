@@ -1,0 +1,34 @@
+<!-- Created by Suyono on 4/11/2015. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:compat="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".home">
+
+
+        <item
+            android:id="@+id/add_shader"
+            android:icon="@android:drawable/ic_menu_add"
+            android:title="@string/add_shader"
+            android:showAsAction="always"/>
+        <item
+            android:id="@+id/save_shader"
+            android:icon="@android:drawable/ic_menu_save"
+            android:title="Simpan"
+            android:showAsAction="always"/>
+
+        <item
+            android:id="@+id/delete_shader"
+            android:icon="@android:drawable/ic_menu_delete"
+            android:title="@string/delete_shader"
+            android:showAsAction="always"/>
+
+        <item
+            android:id="@+id/share_shader"
+            android:icon="@android:drawable/ic_menu_share"
+            android:title="@string/share_shader"
+            android:showAsAction="always"/>
+        <item
+            android:id="@+id/preferences"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="@string/preferences"
+            android:showAsAction="always"/>
+    </menu>

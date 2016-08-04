@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="action_bar_background">#ffaec1ff</color>
+    <color name="pressed">#ff222222</color>
+    <color name="txt">#ffff47c5</color>
+    <color name="editor_bg">#ffffffff</color>
+    <color name="transparan">#00000000</color>
+
+</resources>

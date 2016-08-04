@@ -1,0 +1,247 @@
+@import url('css/reset.css');
+
+/* latin */
+@font-face {
+  font-family: 'Montez';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montez'), local('Montez-Regular'), url(css/aq8el3-0osHIcFK6bXAPkw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Sofadi One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sofadi One'), local('SofadiOne-Regular'), url(css/T28dLve-Ycdi1yHVhvAlyfk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+html, 
+body{
+    word-wrap:break-word;
+	height: 100%;
+	width: 100%;
+	font-family: 'Sofadi One', cursive;
+}
+
+a{
+	text-decoration: none;
+	color: #666;
+}
+
+
+/* --- Banner -------------------------- */
+#banner{
+	width: 100%;
+	height: 70%;
+	background: url(img/banner.jpg) 0 0 repeat;
+	background-attachment: fixed;
+	position: relative;
+}
+
+	#banner #overlay{
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: url(img/overlay.png) 0 100% repeat-x;
+	}
+
+
+	#logo{
+		width: 100%;
+		position: absolute;
+		bottom: 10%;
+		z-index: 5;
+		text-align: center;
+	}
+	#logo img {
+		cursor: pointer;
+		display: inline-block;
+		width: 128px;
+		height: 128px;
+		border: 3px solid rgba(255,255,255,.5);
+		border-radius: 50%;
+	}
+		#logo img:hover{
+			border: 3px solid rgba(255,255,255,.7);
+		}
+	#logo h1{
+		margin: 0 auto;
+		text-align: center;
+		font-family: 'Montez', cursive;
+		font-size: 100px;
+		color: #eee;
+		text-shadow: 1px 1px 1px #000, 1px 2px 3px #555;
+	}
+
+	#logo #jobdesc{
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin: 5px auto;
+		color: #eee;
+		font-size: 20px;
+		text-shadow: 1px 1px 1px #000;
+	}
+
+/* --- Gallery ------------------------- */
+
+
+/* --- Section ------------------------- */
+
+section{
+	width: 100%;
+	max-width: 900px;
+	margin: 40px auto;
+}
+
+	section span{
+		background: #C09A7F;
+		padding: 4px;
+		border-radius: 0 5px 0 0;
+		color: #eee;
+		font-size: 12px;
+	}
+
+	.section{
+		display: table;
+		width: 100%;
+	}
+
+		.section .content{
+			display: table-row;
+			width: 100%;
+		}
+		.section .box{
+			display: table-cell;
+			padding: 10px;
+			width:31.3333%;
+		}
+			.section .box:nth-child(1){
+				background: #eee;
+				border: 5px solid #C09A7F;
+			}
+			.section .box:nth-child(3){
+				border-radius: 0 0 10px 0;
+			}
+			.section .box:hover{
+				background: #ddd;
+			}
+			.section .box h3{
+				padding: 10px;
+				font-size: 18px;
+				font-weight: bold;
+			}
+			.section .box p{
+				padding: 10px;
+				line-height: 1.5em;
+			}
+			.section .box img{
+				width:100%;
+				max-width: 100%;
+				height: auto;
+				border-radius: 10px;
+			}
+
+
+testimonial{
+	position: relative;
+	width: 900px;
+	max-width: 900px;
+	text-align: justify;
+	margin: 20px auto;
+
+}
+
+
+
+footer{
+	border-top: 3px solid #ddd;
+	padding: 30px auto;
+	display: table;
+	width: 900px;
+	max-width: 900px;
+	margin: 40px auto;
+	font-size: 12px;
+}
+	footer a{
+		text-decoration: none;
+		color: #666;
+		padding: 2px;
+		border-bottom: 1px solid #ddd;
+	}
+		footer a:hover{
+			background: #ddd;
+		}
+
+	footer .content{
+		width: 100%;
+		display: table-row;
+		vertical-align: center;
+	}
+		footer .box{
+			display: table-cell;
+			padding: 10px;
+			width: 50%;
+		}
+
+			footer .box:nth-child(2){
+				text-align: right;
+			}
+
+
+@media (max-width: 860px){
+
+	section,
+	.gallery,
+	.testimonial,
+	footer{
+		width: 90%;
+	}
+	.gallery{
+		padding: 0;
+	}
+	.section .box:nth-child(1){
+		border-radius: 0;
+	}
+
+	footer{
+		text-align: center;
+	}
+	footer .box{
+		display: block;
+		width: 90%;
+	}
+
+}
+@media (max-width: 640px){
+	#banner{
+		height: 101%;
+		min-height: 350px;
+	}
+	#logo h1{
+		font-size: 75px;
+	}
+	
+	.gallery .box{
+		/*display: block;*/
+	}
+
+	.section .box{
+		margin:auto;
+		display: block;
+		width: 80%;
+		padding: 5%;
+		border-radius: 0;
+	}
+	footer .box:nth-child(2){
+		text-align: center;
+		width: 90%;
+	}
+	footer .box strong{
+		display: block;
+	}
+}

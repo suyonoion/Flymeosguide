@@ -1,0 +1,101 @@
+FlymeOS v2.0 Updated
+Sama Seperti Sebelumnya...
+
+1. Decompile systemui.apk
+2. Masukkin Bahan-bahan Ke Tempatnya
+	note : untuk smali traffic silahkan pilih sesuai apktool 1.5.2 (lama)
+	atau memakai apktool 2.0 (baru)
+	
+	- Style Traffic
+	buka res\values\styles.xml
+	search </resources>
+	tambahkan ini diatasnya
+	
+	<style name="TextAppearance.StatusBar.Traffic" parent="@android:style/TextAppearance.StatusBar.Icon">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/holo_blue_light</item>
+    </style>
+	
+	buka res\layout\statusbar.xml (sesuaikan dg HH/ROM) 
+	
+	- backup statusbar.xml nya yah,, buat compare mindah2in notif icon, date, signal dLL.
+	
+	search @id/status_bar_contents
+	hapus script tersebut dari 
+	<LinearLayout android:orientation="horizontal" android:id="@id/status_bar_contents"...dst>
+		sampai 
+		.
+		.
+	</LinearLayout>
+    
+	diatas 
+	<LinearLayout android:orientation="horizontal" android:id="@id/ticker"..dst>
+	
+	GANTI DENGAN TEMPLATE SAYA (Silahkan dipilih)
+	didalam statusbar_contents tersebut anda pindah2kan scriptnya sesuai hati dan compare sesuai pilihan_barisnya.
+	
+3. Silahkan Pilih templatenya apakah ingin
+    Garuda Style, 3 Jari Style, Anu Style,
+    2baris, 3baris, 4baris, 5baris, dan lainnya
+
+
+	4. Silahkan Pakai template tersebut dan pahami.
+	-letakkan signal, baterai, date dan lainnya secara hati-hati kedalam baris yg dituju
+	biasanya yg dipindah yg diapit oleh 
+	<LinearLayout android:id="@id/sesuatu" ....dst..	>
+		sesuatu disini
+	</LinearLayout>
+	atau 
+	<com ....>
+		sesuatu
+	</com ....>
+	-perhatikan tag awal(mulai) dan akhirnya(penutup)
+		contoh : 
+		search @id/signal_battery_cluster
+	disana ada 
+	<LinearLayout android:id="@id/signal_battery_cluster" ....dst..	>
+		<include android:id="@id/signal_cluster" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/signal_cluster_view" />
+	</LinearLayout>
+	
+	perhatikan jika ada LinearLaout dan @id nya terkait, usahakan jgn menceraikan sembarangan (klo dah jago terserah :D),sebisa mungkin pindahkan dalam se-tag awal dan akhir.
+	seperti ini :
+	<LinearLayout android:id="@id/signal_battery_cluster" ....dst..	>
+		<include android:id="@id/signal_cluster" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/signal_cluster_view" />
+	</LinearLayout>
+	
+	jgn seperti ini dikeluarkan dari LinearLayout
+	<include android:id="@id/signal_cluster" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/signal_cluster_view" />
+	<LinearLayout android:id="@id/signal_battery_cluster" ....dst..	>
+		misalnya dgnti sesuatu
+	</LinearLayout>
+	atau akan force close nantinya :'(
+	-begitu juga dg notifikasi
+	-saya rasa kalau clock, date, 
+	(imageview dan textview tambahan) bisa dipindah sesuka hati.
+
+	
+5. Anda Bisa Compare dengan statusbar.xml saya, yg ada di masing2 guide.
+6. setelah selesai 
+7. Recompile
+8. Sign.
+9. Push
+10.Done
+
+
+Credit :
+  - StackOverflow
+  - markusfisch ( Open Source ShaderEditor HighLight-nya )
+  - MaaaDon Group (Semua Admin dan Member)
+    Mediatek Android Art and Dev Reborn
+  - Septian Abdi Nugraha (template Lainnya)
+  - Official Sony Xperia M Indonesia ( All Admins and Members)
+  - Dickey Kid'deviel ( tempat bertanya hal-hal dasar statusbar linear :D)
+  - Suyono "ion"(me) Apk and guide.
+
+
+Thank's :
+  - Allah Subhanahu wa Ta'ala
+  - Kedua Orang Tua
+  - Sahabat-sahabat
+  - You

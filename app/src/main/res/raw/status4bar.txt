@@ -1,0 +1,57 @@
+	<!-- KONTEN MULAI -->
+	<LinearLayout android:orientation="horizontal" android:id="@id/status_bar_contents" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="6.0dip" android:paddingEnd="6.0dip">
+		<!-- Konten Kiri (Mulai)-->
+		<LinearLayout android:gravity="left" android:orientation="vertical" android:id="@+id/konten_kiri" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_weight="1.0">
+			<!--1--><LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@+id/konten_kiri_baris1" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_weight="1.0">
+				letakkan sesuatu disini
+				disini isi dari baris ke-1 sebelah kiri jam analog
+				<com.android.systemui.statusbar.policy.Traffic android:textAppearance="@style/TextAppearance.StatusBar.Traffic" android:gravity="left|center" android:id="@+id/traffic" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:paddingStart="4.0dip" />
+				diatas ini saya isi smali traffic
+				</LinearLayout>
+			<ImageView android:contentDescription="Garis Kiri" android:paddingRight="2.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#ffffffff" />
+			<!--2--><LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@+id/konten_kiri_baris2" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_weight="1.0">
+				letakkan sesuatu disini
+				disini isi dari baris ke-2 sebelah kiri jam analog
+			</LinearLayout>
+			<ImageView android:contentDescription="Garis Kiri" android:paddingRight="1.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#ffffffff" />
+			<!--3--><LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@+id/konten_kiri_baris3" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_weight="1.0">
+				letakkan sesuatu disini
+				disini isi dari baris ke-3 sebelah kiri jam analog
+			</LinearLayout>
+			<ImageView android:contentDescription="Garis Kiri" android:paddingRight="1.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#ffffffff" />
+			<!--4--><LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@+id/konten_kiri_baris4" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_weight="1.0">
+				letakkan sesuatu disini
+				disini isi dari baris ke-4 sebelah kiri jam analog
+			</LinearLayout>
+		</LinearLayout>
+		<!-- Konten Kiri (selesai)-->
+
+		<AnalogClock android:contentDescription="Analog Tengah" android:gravity="center" android:id="@+id/clock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dial="@drawable/bg_jam" android:hand_hour="@drawable/jarum_pendek" android:hand_minute="@drawable/jarum_panjang" />
+
+		<!-- Konten Kanan (mulai)-->
+		<LinearLayout android:gravity="right" android:orientation="vertical" android:id="@+id/konten_kanan" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_weight="1.0">
+			<!--1--><LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@+id/konten_kanan_baris1" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_weight="1.0">
+				letakkan sesuatu disini
+				disini isi dari baris ke-1 sebelah kanan jam analog
+			</LinearLayout>
+			<ImageView android:contentDescription="Garis Kanan" android:paddingLeft="2.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#ffffffff" />
+			<!--2--><LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/konten_kanan_baris2" android:layout_width="fill_parent" android:layout_height="15.0dip" android:layout_weight="1.0">
+				letakkan sesuatu disini
+				disini isi dari baris ke-2 sebelah kanan jam analog
+			</LinearLayout>
+			<ImageView android:contentDescription="Garis Kanan" android:paddingLeft="1.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#ffffffff" />
+			<!--3--><LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/konten_kanan_baris3" android:layout_width="wrap_content" android:layout_height="15.0dip">
+				letakkan sesuatu disini
+				disini isi dari baris ke-3 sebelah kanan jam analog
+				<ImageView android:contentDescription="LOGO" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sony" android:paddingStart="4.0dip" />
+				disini saya kasih logo sbg contoh
+			</LinearLayout>
+			<ImageView android:contentDescription="Garis Kanan" android:paddingLeft="1.0dip" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="#ffffffff" />
+			<!--4--><LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/konten_kanan_baris4" android:layout_width="wrap_content" android:layout_height="15.0dip">
+				letakkan sesuatu disini
+				disini isi dari baris ke-4 sebelah kanan jam analog
+			</LinearLayout>
+		</LinearLayout>
+		<!-- Konten Kanan (selesai)-->
+	</LinearLayout>
+	<!-- KONTEN SELESAI -->

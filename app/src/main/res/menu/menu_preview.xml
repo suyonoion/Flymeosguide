@@ -1,0 +1,28 @@
+<!-- Created by Suyono on 4/11/2015. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".duabar_activity">
+
+
+    <item
+        android:id="@+id/prev_2bar"
+        android:icon="@drawable/duabar"
+        android:title="2bar Preview"/>
+    <item
+        android:id="@+id/prev_3bar"
+        android:icon="@drawable/tigabar"
+        android:title="3bar Preview"/>
+
+    <item
+        android:id="@+id/prev_4bar"
+        android:icon="@drawable/empatbar"
+        android:title="4bar Preview"/>
+
+    <item
+        android:id="@+id/prev_5bar"
+        android:icon="@drawable/lebihbar"
+        android:title="5bar Preview"/>
+    <item
+        android:id="@+id/prev_bonus"
+        android:icon="@drawable/ic_launcher"
+        android:title="Bonus Preview"/>
+</menu>
